@@ -1,0 +1,24 @@
+.cardContainer{
+    width: 10%;
+    background-color: #5e5c5c28;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(83, 83, 83);
+    border-radius: 8px;
+    padding: 1rem;
+
+}
+.cardImage{
+    width: 100%;
+    height: 100%;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.countryName{
+    font-size: 1rem;
+}
