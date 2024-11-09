@@ -1,6 +1,6 @@
 import {  useState,useEffect } from "react";
 import axios from 'axios'
-import Card from "./Components/Card";
+import Country from "./Components/Country";
 import "./App.css"
 
 function App() {
@@ -20,10 +20,10 @@ function App() {
   },[countries])
   return (
     <div className="App">
-      <div className="cards-container">
+      <div className="Countrys-container">
       {countries.length > 0 ? ( countries.map((country,index) => {
         console.log(country.name)
-        return <Card item={country} key={index}/>
+        return <Country item={country} key={index}/>
       })) : <h1>loading...</h1>}
       </div>
     </div>

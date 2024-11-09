@@ -1,9 +1,9 @@
 import React from 'react'
-import './Card.css'
-const Card = ({item,index}) => {
+import './Country.css'
+const Country = ({item,index}) => {
   return (
-    <div className="cardContainer" key={index}>
-        <div className='cardImage'>
+    <div className="countryContainer" key={index}>
+        <div className='countryImage'>
             <img src={item.flag} alt={item.abbr} />
         </div>
         <h1 className='countryName'>{item.name}</h1>
@@ -11,4 +11,4 @@ const Card = ({item,index}) => {
   )
 }
 
-export default Card
+export default Country
