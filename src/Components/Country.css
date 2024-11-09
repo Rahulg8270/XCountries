@@ -1,4 +1,4 @@
-.cardContainer{
+.countryContainer{
     width: 10%;
     background-color: #5e5c5c28;
     display: flex;
@@ -10,14 +10,14 @@
     padding: 1rem;
 
 }
-.cardImage{
+.countryImage{
     width: 100%;
     height: 100%;
 }
 img{
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 100px;
 }
 .countryName{
     font-size: 1rem;

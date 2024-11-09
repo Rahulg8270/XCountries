@@ -20,11 +20,10 @@ function App() {
   },[countries])
   return (
     <div className="App">
-      <div className="Countrys-container">
-      {countries.length > 0 ? ( countries.map((country,index) => {
-        console.log(country.name)
-        return <Country item={country} key={index}/>
-      })) : <h1>loading...</h1>}
+      <div className="countries-container">
+        {countries.map((item,index) => {
+          return <Country item={item} key={index}/>
+        })}
       </div>
     </div>
   );
