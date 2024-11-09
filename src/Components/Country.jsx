@@ -1,8 +1,8 @@
 import React from 'react'
 import './Country.css'
-const Country = ({item,index}) => {
+const Country = ({item}) => {
   return (
-    <div className="countryContainer" key={index}>
+    <div className="countryContainer">
         <div className='countryImage'>
             <img src={item.flag} alt={`Flag of ${item.name}`} />
         </div>

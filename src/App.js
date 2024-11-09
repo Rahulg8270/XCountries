@@ -17,12 +17,12 @@ function App() {
 
   useEffect(()=>{
     fetchCountries()
-  },[countries])
+  },[])
   return (
     <div className="App">
       <div className="countries-container">
         {countries.map((item,index) => {
-          return <Country item={item} key={index}/>
+          return <Country item={item} flag={item.flag} key={item.abbr}/>
         })}
       </div>
     </div>
